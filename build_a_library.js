@@ -30,3 +30,22 @@ class Media {
     this._ratings.push(rating);
   }
 }
+
+// class Book
+
+class Book extends Media {
+  constructor(author, title, pages){
+    super(title);
+    this._title = title;
+    this._pages = pages;
+    this._author = author;
+  }
+
+  get pages(){
+    return this._pages;
+  }
+
+  get author(){
+    return this._author;
+  }
+}
