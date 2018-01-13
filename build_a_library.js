@@ -49,3 +49,21 @@ class Book extends Media {
     return this._author;
   }
 }
+
+// class Movie
+
+class Movie extends Media {
+  constructor(director, title, runTime){
+    super(title);
+    this._director = director;
+    this._runTime = runTime;
+  }
+
+  get runTime(){
+    return this._runTime;
+  }
+
+  get director(){
+    return this._runTime;
+  }
+}
